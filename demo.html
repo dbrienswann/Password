@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Password gate — demo</title>
+    <style>
+      html, body { margin: 0; height: 100%; }
+      #app {
+        height: 100vh; display: flex; align-items: center; justify-content: center;
+        font-family: system-ui, sans-serif; color: #333; background: #ededed;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">🎉 Unlocked — your prototype renders here.</div>
+
+    <script src="password-gate.js"></script>
+    <script>
+      // Demo uses password "demo" so this file works standalone. In a real
+      // prototype, use the shared password (provided separately) instead.
+      PasswordGate.mount({
+        title: 'Your Prototype',
+        password: 'demo',
+        onUnlock: function () {
+          document.getElementById('app').textContent = '🎉 Unlocked — your prototype renders here.';
+        },
+      });
+    </script>
+  </body>
+</html>
