@@ -15,7 +15,7 @@ button — and changes **only its title**.
 - **`title`** — your prototype's name (the only per-proto difference).
 - **the password** — set the shared value the team lead sent you.
 
-Keep everything else identical (accent `#E45039`, ink gradient `#2e150f → #190b06`,
+Keep everything else identical (accent `#E45039`, background `radial-gradient(120% 120% at 50% 0%, #232735 0%, #15171F 55%, #0D0E13 100%)`,
 storage key `proto_preview_unlocked`) so the gates match.
 
 ## Pick the file for your stack

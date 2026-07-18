@@ -20,8 +20,7 @@ const TITLE = 'Prototype' //                          ← each proto sets its ti
 const PREVIEW_PASSWORD = 'REPLACE_WITH_SHARED_PASSWORD' // ← set the shared password (kept private)
 // Shared brand look — keep identical across protos so every gate matches.
 const ACCENT = '#E45039'
-const INK_DARK = '#2e150f'
-const INK_DARKEST = '#190b06'
+const BACKGROUND = 'radial-gradient(120% 120% at 50% 0%, #232735 0%, #15171F 55%, #0D0E13 100%)'
 const STORAGE_KEY = 'proto_preview_unlocked'
 
 export function getUnlocked(): boolean {
@@ -63,7 +62,7 @@ export function PasswordGate({ onUnlock, title = TITLE }: { onUnlock: () => void
         gap: 0,
         padding: '0 34px',
         textAlign: 'center',
-        background: `linear-gradient(180deg, ${INK_DARK} 0%, ${INK_DARKEST} 100%)`,
+        background: BACKGROUND,
         color: '#fff',
       }}
     >

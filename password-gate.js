@@ -24,8 +24,7 @@
     title: 'Prototype',
     password: 'REPLACE_WITH_SHARED_PASSWORD', // set in your private repo, or pass to mount()
     accent: '#E45039', // vermilion
-    inkDark: '#2e150f',
-    inkDarkest: '#190b06',
+    background: 'radial-gradient(120% 120% at 50% 0%, #232735 0%, #15171F 55%, #0D0E13 100%)',
     storageKey: 'proto_preview_unlocked', // shared → unlock once per origin
     subtitle: 'This preview is private. Enter the password to continue.',
   };
@@ -42,7 +41,7 @@
 
   function template(cfg) {
     return '' +
-      '<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 34px;text-align:center;font-family:system-ui,-apple-system,\'Segoe UI\',Roboto,sans-serif;background:linear-gradient(180deg,' + cfg.inkDark + ' 0%,' + cfg.inkDarkest + ' 100%);color:#fff;">' +
+      '<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 34px;text-align:center;font-family:system-ui,-apple-system,\'Segoe UI\',Roboto,sans-serif;background:' + cfg.background + ';color:#fff;">' +
         '<div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;">' +
           '<svg width="26" height="30" viewBox="0 0 26 30" fill="none">' +
             '<rect x="3" y="13" width="20" height="15" rx="4" fill="' + cfg.accent + '"/>' +
