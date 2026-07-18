@@ -20,7 +20,7 @@ const TITLE = 'Prototype' //                          ← each proto sets its ti
 const PREVIEW_PASSWORD = 'REPLACE_WITH_SHARED_PASSWORD' // ← set the shared password (kept private)
 // Shared brand look — keep identical across protos so every gate matches.
 const ACCENT = '#E45039'
-const BACKGROUND = 'radial-gradient(120% 120% at 50% 0%, #232735 0%, #15171F 55%, #0D0E13 100%)'
+const BACKGROUND = '#232735'
 const STORAGE_KEY = 'proto_preview_unlocked'
 
 export function getUnlocked(): boolean {

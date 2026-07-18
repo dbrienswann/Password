@@ -24,7 +24,7 @@
     title: 'Prototype',
     password: 'REPLACE_WITH_SHARED_PASSWORD', // set in your private repo, or pass to mount()
     accent: '#E45039', // vermilion
-    background: 'radial-gradient(120% 120% at 50% 0%, #232735 0%, #15171F 55%, #0D0E13 100%)',
+    background: '#232735',
     storageKey: 'proto_preview_unlocked', // shared → unlock once per origin
     subtitle: 'This preview is private. Enter the password to continue.',
   };
